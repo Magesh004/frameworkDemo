@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1421BB71779C0635CC79AC7F /* Pods_FrameworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69E40E8255B13551234288A /* Pods_FrameworkDemo.framework */; };
+		C38B04A824CAA95500CE1353 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38B04A724CAA95500CE1353 /* DemoView.swift */; };
 		C3FFDBD224C97F5A001AC307 /* FrameworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FFDBC824C97F5A001AC307 /* FrameworkDemo.framework */; };
 		C3FFDBD724C97F5A001AC307 /* FrameworkDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FFDBD624C97F5A001AC307 /* FrameworkDemoTests.swift */; };
 		C3FFDBD924C97F5A001AC307 /* FrameworkDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = C3FFDBCB24C97F5A001AC307 /* FrameworkDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		5BA522A6EFC947EDC10D22D4 /* Pods-FrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.debug.xcconfig"; path = "Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C38B04A724CAA95500CE1353 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		C3FFDBC824C97F5A001AC307 /* FrameworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FFDBCB24C97F5A001AC307 /* FrameworkDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkDemo.h; sourceTree = "<group>"; };
 		C3FFDBCC24C97F5A001AC307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				C3FFDBCB24C97F5A001AC307 /* FrameworkDemo.h */,
 				C3FFDBCC24C97F5A001AC307 /* Info.plist */,
+				C38B04A724CAA95500CE1353 /* DemoView.swift */,
 			);
 			path = FrameworkDemo;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				TargetAttributes = {
 					C3FFDBC724C97F5A001AC307 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					C3FFDBD024C97F5A001AC307 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -246,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C38B04A824CAA95500CE1353 /* DemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5BA522A6EFC947EDC10D22D4 /* Pods-FrameworkDemo.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -407,6 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.doodleblue.FrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -416,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D68217DAE234B24509E894A7 /* Pods-FrameworkDemo.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -439,6 +447,7 @@
 		C3FFDBE024C97F5A001AC307 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FrameworkDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,6 +465,7 @@
 		C3FFDBE124C97F5A001AC307 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FrameworkDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
