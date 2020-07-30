@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4CBEB3DC671D5264026A48 /* Pods_CustomDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02093B47FE103330FDF2ADD /* Pods_CustomDemo.framework */; };
 		C38B04A824CAA95500CE1353 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38B04A724CAA95500CE1353 /* DemoView.swift */; };
 		C38B04AA24CAAAB700CE1353 /* CustomDemo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C38B04A924CAAAB700CE1353 /* CustomDemo.podspec */; };
 		C3FFDBD224C97F5A001AC307 /* CustomDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FFDBC824C97F5A001AC307 /* CustomDemo.framework */; };
-		C3FFDBD724C97F5A001AC307 /* FrameworkDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FFDBD624C97F5A001AC307 /* FrameworkDemoTests.swift */; };
-		C3FFDBD924C97F5A001AC307 /* FrameworkDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = C3FFDBCB24C97F5A001AC307 /* FrameworkDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3FFDBD924C97F5A001AC307 /* CustomDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = C3FFDBCB24C97F5A001AC307 /* CustomDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,14 +25,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E34E3E43C334EA0F3AC14DC /* Pods-CustomDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomDemo.release.xcconfig"; path = "Target Support Files/Pods-CustomDemo/Pods-CustomDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5AE9CE9998CD5D000172B2C9 /* Pods-CustomDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomDemo.debug.xcconfig"; path = "Target Support Files/Pods-CustomDemo/Pods-CustomDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C38B04A724CAA95500CE1353 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		C38B04A924CAAAB700CE1353 /* CustomDemo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CustomDemo.podspec; sourceTree = "<group>"; };
 		C3FFDBC824C97F5A001AC307 /* CustomDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3FFDBCB24C97F5A001AC307 /* FrameworkDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkDemo.h; sourceTree = "<group>"; };
+		C3FFDBCB24C97F5A001AC307 /* CustomDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomDemo.h; sourceTree = "<group>"; };
 		C3FFDBCC24C97F5A001AC307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3FFDBD124C97F5A001AC307 /* CustomDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3FFDBD624C97F5A001AC307 /* FrameworkDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDemoTests.swift; sourceTree = "<group>"; };
-		C3FFDBD824C97F5A001AC307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D02093B47FE103330FDF2ADD /* Pods_CustomDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4CBEB3DC671D5264026A48 /* Pods_CustomDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,9 +56,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F7AE9211D463A9DDEE487D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AE9CE9998CD5D000172B2C9 /* Pods-CustomDemo.debug.xcconfig */,
+				3E34E3E43C334EA0F3AC14DC /* Pods-CustomDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		54DDE0A752434E5C646E2B4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D02093B47FE103330FDF2ADD /* Pods_CustomDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -66,9 +79,9 @@
 			children = (
 				C38B04A924CAAAB700CE1353 /* CustomDemo.podspec */,
 				C3FFDBCA24C97F5A001AC307 /* CustomDemo */,
-				C3FFDBD524C97F5A001AC307 /* CustomDemoTests */,
 				C3FFDBC924C97F5A001AC307 /* Products */,
 				54DDE0A752434E5C646E2B4B /* Frameworks */,
+				4F7AE9211D463A9DDEE487D2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,20 +97,11 @@
 		C3FFDBCA24C97F5A001AC307 /* CustomDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C3FFDBCB24C97F5A001AC307 /* FrameworkDemo.h */,
+				C3FFDBCB24C97F5A001AC307 /* CustomDemo.h */,
 				C3FFDBCC24C97F5A001AC307 /* Info.plist */,
 				C38B04A724CAA95500CE1353 /* DemoView.swift */,
 			);
 			path = CustomDemo;
-			sourceTree = "<group>";
-		};
-		C3FFDBD524C97F5A001AC307 /* CustomDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				C3FFDBD624C97F5A001AC307 /* FrameworkDemoTests.swift */,
-				C3FFDBD824C97F5A001AC307 /* Info.plist */,
-			);
-			path = CustomDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,7 +111,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FFDBD924C97F5A001AC307 /* FrameworkDemo.h in Headers */,
+				C3FFDBD924C97F5A001AC307 /* CustomDemo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +122,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3FFDBDC24C97F5A001AC307 /* Build configuration list for PBXNativeTarget "CustomDemo" */;
 			buildPhases = (
+				B4E835E23D22D8A7E59C4B48 /* [CP] Check Pods Manifest.lock */,
 				C3FFDBC324C97F5A001AC307 /* Headers */,
 				C3FFDBC424C97F5A001AC307 /* Sources */,
 				C3FFDBC524C97F5A001AC307 /* Frameworks */,
@@ -206,6 +211,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B4E835E23D22D8A7E59C4B48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3FFDBC424C97F5A001AC307 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -219,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FFDBD724C97F5A001AC307 /* FrameworkDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +385,7 @@
 		};
 		C3FFDBDD24C97F5A001AC307 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE9CE9998CD5D000172B2C9 /* Pods-CustomDemo.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +411,7 @@
 		};
 		C3FFDBDE24C97F5A001AC307 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E34E3E43C334EA0F3AC14DC /* Pods-CustomDemo.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
